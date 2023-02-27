@@ -2,3 +2,41 @@
     font-family: "Norse Bold";
     src: url(./fonts/Norse-Bold.otf);
 }
+
+.container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.logo-area {
+    background-image: url(./images/background.jpg);
+    width: 35vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-area {
+    height: 35vh;
+}
+
+.form-area {
+    height: 30vh;
+}
+
+.submit.section {
+    height: 35vh;
+}
+
