@@ -3,6 +3,12 @@
     src: url(./fonts/Norse-Bold.otf);
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(196, 199, 202);
+}
+
 .container {
     display: flex;
     width: 100vw;
@@ -15,11 +21,31 @@
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-body {
-    margin: 0;
-    padding: 0;
+.logo-text {
+    font-family: Norse Bold;
+    font-size: 60px;
+}
+
+.logo-section {
+    position: relative;
+    top: 120px;
+    display: flex;
+    align-items: center;
+}
+
+img {
+    width: 50%;
+    height: 50%;
+}
+
+.copyright-section {
+    margin-top: auto;
+    padding-bottom: 50px;
 }
 
 .form {
@@ -30,13 +56,30 @@ body {
 
 .info-area {
     height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 5%;
 }
 
 .form-area {
     height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5%
 }
 
-.submit.section {
+.submit-section {
     height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 5%
+}
+
+button {
+    display: block;
+    width: 20%;
 }
 
