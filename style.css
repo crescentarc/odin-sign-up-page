@@ -35,12 +35,15 @@ body {
     position: relative;
     top: 120px;
     display: flex;
+    justify-content: center;
     align-items: center;
+    background-color: rgba(0, 0, 0, 0.500);
+    width: inherit;
 }
 
 img {
-    width: 50%;
-    height: 50%;
+    height: 100px;
+    width: 100px;
 }
 
 .copyright-section {
@@ -68,6 +71,15 @@ img {
     flex-direction: column;
     justify-content: center;
     padding: 5%
+}
+
+.form-container {
+    display: flex;
+    gap: 20px;
+}
+
+input {
+    margin-bottom: 10px;
 }
 
 .submit-section {
