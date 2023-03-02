@@ -80,6 +80,7 @@ img {
 
 input {
     margin-bottom: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.904);
 }
 
 .submit-section {
@@ -92,6 +93,30 @@ input {
 
 button {
     display: block;
-    width: 20%;
+    width: 30%;
+    border-radius: 10px;
+    height: 20%;
+    background-color: rgb(34, 70, 34);
+    color: white;
+    font-size: 16px;
 }
 
+input:focus {
+    border: 1px solid rgb(75, 75, 236);
+    outline: none;
+}
+
+input:invalid {
+    border: 1px solid rgb(218, 44, 44);
+    outline: none;
+}
+
+input:valid {
+    border: 1px solid rgb(91, 194, 91);
+    outline: none;
+}
+
+input:placeholder-shown {
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.904)
+}
