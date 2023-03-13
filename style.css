@@ -75,12 +75,17 @@ img {
 
 .form-container {
     display: flex;
-    gap: 20px;
+    gap: 30px;
 }
 
 input {
     margin-bottom: 10px;
     border: 1px solid rgba(255, 255, 255, 0.904);
+}
+
+.password-error {
+    color: red;
+    position: absolute;
 }
 
 .submit-section {
