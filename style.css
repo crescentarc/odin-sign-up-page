@@ -79,11 +79,21 @@ img {
 }
 
 input {
-    margin-bottom: 10px;
     border: 1px solid rgba(255, 255, 255, 0.904);
+    width: 225px;
+    margin-bottom: 20px;
+}
+
+span {
+    margin-top: -20px;
 }
 
 .password-error {
+    color: red;
+    position: absolute;
+}
+
+.phone-error {
     color: red;
     position: absolute;
 }
