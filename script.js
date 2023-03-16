@@ -22,3 +22,18 @@ phone.addEventListener(`input`, function() {
         phoneError.textContent = ``;
     }
 })
+
+//set error message for incorrect email entry
+let email = document.querySelector(`#email`);
+let emailError = document.querySelector(`.email-error`); 
+var emailPattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+email.addEventListener(`input`, function() {
+    if (email.value.match(emailPattern)) {
+        emailError.textContent = ``;
+    }
+    else {
+        emailError.textContent = 
+        `Please enter email in valid format (e.g. johnsmith@website.com)`;
+    }
+})

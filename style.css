@@ -78,14 +78,17 @@ img {
     gap: 30px;
 }
 
+
 input {
     border: 1px solid rgba(255, 255, 255, 0.904);
     width: 225px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 span {
-    margin-top: -20px;
+    margin-top: -40px;
+    word-wrap: normal;
+    width: 225px;
 }
 
 .password-error {
@@ -94,6 +97,11 @@ span {
 }
 
 .phone-error {
+    color: red;
+    position: absolute;
+}
+
+.email-error {
     color: red;
     position: absolute;
 }
