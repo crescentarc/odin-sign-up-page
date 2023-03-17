@@ -19,9 +19,11 @@
 
             <div class="copyright-section">
                 Photo by <a href="https://unsplash.com/@haliewestphoto"
-                target="_blank" rel="noopener noreferrer">Halie West</a> 
+                target="_blank" rel="noopener noreferrer" id="background-source-link">
+                Halie West</a> 
                 on <a href="https://unsplash.com/photos/25xggax4bSA"
-                target="_blank" rel="noopener noreferrer">Unsplash</a>
+                target="_blank" rel="noopener noreferrer"
+                id="background-source-link">Unsplash</a>
             </div>
         </div>
 
@@ -36,7 +38,7 @@
             </div>
 
             <div class="form-area">
-                <p>Please fill in info</p>
+                <p class="form-heading">Please fill in info</p>
 
                 <form action="" method="get" class="form-container">
                     <div class="left-form-container">
@@ -53,6 +55,7 @@
                         <input type="password" name="password" id="password"
                         required placeholder="8-12 characters"
                         minlength="8" maxlength="12"><br>
+                        <span class="password-error"></span>
                     </div>
 
                     <div class="right-form-container">
@@ -72,7 +75,7 @@
                         id="password-confirm" required
                         placeholder="8-12 characters"
                         minlength="8" maxlength="12"><br>
-                        <span class="password-error"></span>
+                        <span class="password-confirm-error"></span>
                     </div>
                 </form>
             </div>
@@ -80,7 +83,7 @@
             <div class="submit-section">
                 <button>Create Account</button>
 
-                <p>Already have an account? <a href="#">Log in</a></p>
+                <p>Already have an account? <a href="#" id="login-link">Log in</a></p>
             </div>
         </div>
     </div>

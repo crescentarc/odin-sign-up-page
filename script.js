@@ -1,14 +1,24 @@
 // set error messages for incorrect password entry
 let password = document.querySelector(`#password`);
 let passwordConfirm = document.querySelector(`#password-confirm`);
-let passwordError = document.querySelector(`.password-error`);
+let passwordError = document.querySelector(`.password-error`)
+let passwordConfirmError = document.querySelector(`.password-confirm-error`);
 
 passwordConfirm.addEventListener(`input`, function() {
     if (passwordConfirm.value !== password.value) {
-        passwordError.textContent = `Passwords do not match`;
+        passwordConfirmError.textContent = `Passwords do not match`;
     } else if (passwordConfirm.value == password.value) {
+        passwordConfirmError.textContent = ``;
+    }
+})
+
+password.addEventListener(`input`, function() {
+    if(password.value.length < 8) {
+        passwordError.textContent = `Password must be 8-12 characters long`;
+    } else {
         passwordError.textContent = ``;
     }
+
 })
 
 //set error message for incorrect phone number entry
