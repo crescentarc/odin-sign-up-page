@@ -60,6 +60,7 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 65vw;
 }
 
 .info-area {
@@ -79,6 +80,7 @@ img {
     justify-content: center;
     padding: 5%;
     font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0 0 10px #888;
 }
 
 .form-heading {
@@ -96,6 +98,8 @@ input {
     width: 225px;
     margin-bottom: 40px;
     box-shadow: 0 0 5px #888;
+    border-radius: 4px;
+    height: 20px;
 }
 
 span {
@@ -143,7 +147,9 @@ button {
     height: 20%;
     background-color: rgb(34, 70, 34);
     color: white;
-    font-size: 16px;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0 0 5px #888;
 }
 
 #login-link {
