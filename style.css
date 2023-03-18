@@ -137,14 +137,16 @@ span {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 5%
+    padding: 5%;
+    padding-top: 2.5%;
+
 }
 
 button {
     display: block;
-    width: 30%;
+    width: 175px;
     border-radius: 10px;
-    height: 20%;
+    height: 50px;
     background-color: rgb(34, 70, 34);
     color: white;
     font-size: 14px;
